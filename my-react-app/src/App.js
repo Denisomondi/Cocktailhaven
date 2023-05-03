@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import Filter from './Filter';
+
+const API_KEY = '1';
 
 function App() {
+  const [cocktails, setCocktails] = useState([]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Filter setCocktails={setCocktails} apiKey={API_KEY} />
+      <ul>
+        {cocktails.map(cocktail => (
+          <li key={cocktail.idDrink}>{cocktail.strDrink}</li>
+        ))}
+      </ul>
     </div>
   );
 }
