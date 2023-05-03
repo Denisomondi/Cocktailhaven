@@ -7,6 +7,7 @@
 4. Steve Kariuki - https://github.com/NoobStevie
 
 ## Description of project
+In this end of Phase2 project we created a mixologist's dream. Using TheCocktailDB we created Cocktailhaven everyone's go to web page for everything 🍹COCKTAILS🍹
 
 ## Project setup instructions
 
