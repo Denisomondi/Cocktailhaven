@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Filter from './Filter';
+import RandomCocktail from './components/RandomCocktail';
 
 const API_KEY = '1';
 
@@ -14,6 +15,7 @@ function App() {
           <li key={cocktail.idDrink}>{cocktail.strDrink}</li>
         ))}
       </ul>
+      <RandomCocktail />
     </div>
   );
 }
