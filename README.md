@@ -1,6 +1,10 @@
 # Cocktailhaven
 
 ## Author name 
+Samantha Wangari
+Denis Omondi
+Stephanie Wanja
+Steve Kariuki
 
 ## Description of project
 
