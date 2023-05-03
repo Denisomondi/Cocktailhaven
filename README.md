@@ -1,13 +1,13 @@
 # Cocktailhaven
 
-#Author name 
+# Author name 
 
-#Description of project
+# Description of project
 
-#Project setup instructions
+# Project setup instructions
 
-#Programming Languages Used
+# Programming Languages Used
 
-#Link to live site on GitHub Pages
+# Link to live site on GitHub Pages
 
-#Copyright and license information
+# Copyright and license information
