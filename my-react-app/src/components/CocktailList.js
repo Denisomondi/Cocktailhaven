@@ -1,4 +1,5 @@
 import React from "react";
+import Loading from "./Loading";
 import Cocktail from "./Cocktail";
 
 const CocktaiList = () => {
