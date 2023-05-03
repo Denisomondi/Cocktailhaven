@@ -1,6 +1,6 @@
 # Cocktailhaven
 
-# Author name 
+## Author name 
 
 # Description of project
 
