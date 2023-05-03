@@ -23,9 +23,11 @@ API used www.thecocktaildb.com/api/json/v1
 
 ## Programming Languages Used
 
-1.JavaScript.
-2.HTML.
-3.CSS.
+1.JavaScript🤖
+
+2.HTML🤖
+
+3.CSS🤖
 
 ## Link to live site on GitHub Pages
 
