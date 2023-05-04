@@ -6,6 +6,7 @@ import RandomCocktail from './components/RandomCocktail';
 import NavBar from './components/Navbar';
 import SearchForm from './components/SearchForm';
 import SearchIngredient from './components/SearchIngredient';
+import About from './pages/About';
 
 
 const API_KEY = '1';
@@ -28,6 +29,7 @@ function App() {
       <NavBar />
       <SearchForm />
       <SearchIngredient />
+      <About />
       
       
     </div>
