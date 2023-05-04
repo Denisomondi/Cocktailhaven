@@ -1,3 +1,4 @@
+// Removed from App.js To be deleted
 import React from "react";
 import { NavLink } from "react-router-dom";
 

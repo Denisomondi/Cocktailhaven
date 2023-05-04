@@ -1,3 +1,4 @@
+// Removed from App.js To be deleted
 const fetchCocktailDetails = async (id) => {
     try {
       const response = await fetch(`https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i=${id}`);

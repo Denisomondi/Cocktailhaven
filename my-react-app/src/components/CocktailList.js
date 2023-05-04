@@ -1,3 +1,5 @@
+// Removed from App.js To be deleted
+
 import React, { useEffect } from 'react';
 import { AppContext, useGlobalContext } from "./Context";
 import Cocktail from './Cocktail';

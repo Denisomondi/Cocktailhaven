@@ -1,3 +1,6 @@
+// Removed from App.js To be deleted
+
+
 import React, { useEffect, useState } from 'react';
 import fetchCocktailDetails from './utilis/fetchCocktailDetails';
 
