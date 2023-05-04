@@ -93,7 +93,11 @@ function Filter(props) {
         <option value="Margarita Glass">Margarita Glass</option>
         <option value="Punch Bowl">Punch Bowl</option>
         <option value="Pitcher">Pitcher</option>
-        <option value=""></option>
+        <option value="Irish Coffee Cup">Irish Coffee Cup</option>
+        <option value="Brandy Snifer">Brandy Snifer</option>
+        <option value="Wine Glass">Wine Glass</option>
+        <option value="White Wine Glass">White Wine Glass</option>
+        <option value="Pint Glass">Pint Glass</option>
       </select>
       <button type="submit">Submit</button>
     </form>
