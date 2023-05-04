@@ -21,7 +21,10 @@ function App() {
       <Filter setCocktails={setCocktails} apiKey={API_KEY} />
       <ul>
         {cocktails.map(cocktail => (
-          <li key={cocktail.idDrink}>{cocktail.strDrink}</li>
+          <li key={cocktail.idDrink}>
+            <img src={cocktail.strDrinkThumb} alt={cocktail.strDrink} />
+            {cocktail.strDrink}
+            </li>
         ))}
       </ul>
       </div>
