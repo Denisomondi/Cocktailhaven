@@ -1,5 +1,5 @@
 import React from 'react';
-import { useGlobalContext } from './context';
+import { useGlobalContext } from './Context';
 
 const SearchForm = () => {
   const { setSearchTerm } = useGlobalContext();

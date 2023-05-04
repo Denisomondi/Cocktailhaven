@@ -8,25 +8,6 @@ const AppProvider = ({ children }) => {
   const [searchResults, setSearchResults] = useState([]);
   const [cocktails, setCocktails] = useState([]);
 
-  const fetchCocktails = async () => {
-    setIsLoading(true);
-    try {
-      const response = await fetch(
-        `https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${searchTerm}`
-      );
-      const data = await response.json();
-      setSearchResults(data.drinks || []);
-      setIsLoading(false);
-    } catch (error) {
-      console.log(error);
-      setIsLoading(false);
-    }
-  };
-
-  useEffect(() => {
-    fetchCocktails();
-  }, [searchTerm]);
-
   useEffect(() => {
     const fetchAllCocktails = async () => {
       setIsLoading(true);
@@ -42,9 +23,28 @@ const AppProvider = ({ children }) => {
         setIsLoading(false);
       }
     };
+
     fetchAllCocktails();
   }, []);
 
+  useEffect(() => {
+    const fetchCocktails = async () => {
+      setIsLoading(true);
+      try {
+        const response = await fetch(
+          `https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${searchTerm}`
+        );
+        const data = await response.json();
+        setSearchResults(data.drinks ? data.drinks : []);
+        setIsLoading(false);
+      } catch (error) {
+        console.error(error);
+        setIsLoading(false);
+      }
+    };
+  
+    fetchCocktails();
+  }, [searchTerm]);
   return (
     <AppContext.Provider
       value={{

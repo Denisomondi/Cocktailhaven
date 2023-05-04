@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
-import Filter from './Filter';
+import Filter from './components/Filter';
 import SearchCocktailID from './components/SearchCocktailID';
-import SearchIngredientID from './components/SearchIngredient ID';
+import SearchIngredientID from './components/SearchIngredientID';
 import CocktailDetails from './components/CocktailDetails';
 import RandomCocktail from './components/RandomCocktail';
-import CocktailList from '.components/CocktailList';
-import NavBar from '.components/NavBar';
-import SearchForm from '.components/SearchForm';
-import SearchIngredient from '.components/SearchIngredient';
+import CocktailList from './components/CocktailList';
+import NavBar from './components/Navbar';
+import SearchForm from './components/SearchForm';
+import SearchIngredient from './components/SearchIngredient';
 
 
 const API_KEY = '1';

@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { useGlobalContext } from './context';
+import { AppContext, useGlobalContext } from "./Context";
 import Cocktail from './Cocktail';
 
 const CocktailList = () => {

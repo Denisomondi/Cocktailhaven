@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import fetchCocktailDetails from './utils/fetchCocktailDetails';
+import fetchCocktailDetails from './utilis/fetchCocktailDetails';
 
 const CocktailDetails = ({ cocktailId }) => {
   const [cocktailDetails, setCocktailDetails] = useState(null);
