@@ -4,6 +4,10 @@ import SearchCocktailID from './components/SearchCocktailID';
 import SearchIngredientID from './components/SearchIngredient ID';
 import CocktailDetails from './components/CocktailDetails';
 import RandomCocktail from './components/RandomCocktail';
+import CocktailList from '.components/CocktailList';
+import NavBar from '.components/NavBar';
+import SearchForm from '.components/SearchForm';
+import SearchIngredient from '.components/SearchIngredient';
 
 
 const API_KEY = '1';
@@ -24,6 +28,10 @@ function App() {
       <CocktailDetails />
       <SearchIngredientID />
       <RandomCocktail />
+      <CocktailList />
+      <NavBar />
+      <SearchForm />
+      <SearchIngredient />
       
       
     </div>
