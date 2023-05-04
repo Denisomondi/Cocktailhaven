@@ -18,6 +18,18 @@ With this it allows the user to:
 6. Save or bookmark favorite cocktails for easy access later.
 
 ## Project setup instructions
+
+1. Git clone the repository.
+
+2. Open it in vscode.
+
+3. Run the following: 
+
+### `npm install`
+
+### `npm install react-router-dom`
+
+### `npm start`
  
 API used www.thecocktaildb.com/api/json/v1 
 
