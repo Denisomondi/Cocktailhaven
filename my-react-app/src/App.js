@@ -1,4 +1,7 @@
 import React, { useState } from 'react';
+
+import './App.css'
+
 import Filter from './components/Filter';
 import SearchCocktailID from './components/SearchCocktailID';
 import SearchIngredientID from './components/SearchIngredientID';
