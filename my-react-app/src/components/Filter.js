@@ -4,22 +4,26 @@ function Filter(props) {
   const [selectedAlcoholic, setSelectedAlcoholic] = useState('Alcoholic');
   const [selectedCategory, setSelectedCategory] = useState('');
   const [selectedGlass, setSelectedGlass] = useState('');
+  
+
+  
 
   // Get cocktails by alcoholic
   function getCocktailsByAlcoholic() {
     const url = `https://www.thecocktaildb.com/api/json/v1/1/filter.php?a=${selectedAlcoholic}`;
     fetch(url)
       .then(response => response.json())
-      .then(data => props.setCocktails(data.drinks))
+      .then(data => props.setCocktails(data.drinks.slice(0, 8))) // limit to 8 results
       .catch(error => console.error(error));
   }
+  
 
   // Get cocktails by category
   function getCocktailsByCategory() {
     const url = `https://www.thecocktaildb.com/api/json/v1/1/filter.php?c=${selectedCategory}`;
     fetch(url)
       .then(response => response.json())
-      .then(data => props.setCocktails(data.drinks))
+      .then(data => props.setCocktails(data.drinks.slice(0, 8))) // limit to 8 results
       .catch(error => console.error(error));
   }
 
@@ -28,7 +32,7 @@ function Filter(props) {
     const url = `https://www.thecocktaildb.com/api/json/v1/1/filter.php?g=${selectedGlass}`;
     fetch(url)
       .then(response => response.json())
-      .then(data => props.setCocktails(data.drinks))
+      .then(data => props.setCocktails(data.drinks.slice(0, 8))) // limit to 8 results
       .catch(error => console.error(error));
   }
 
@@ -46,9 +50,16 @@ function Filter(props) {
     } else {
       alert('Please fill out one of the fields: Alcoholic, Category, or Glass.');
     }
+
+    
   }
 
+  
+
+  
+
   return (
+    <div>
     <form className="filter-form" onSubmit={handleSubmit} >
       <label htmlFor="alcoholic">Alcoholic:</label>
       <select
@@ -104,7 +115,22 @@ function Filter(props) {
       </select>
       <button type="submit">Submit</button>
     </form>
+
+    <div className="cocktail-list">
+        {props.cocktails && props.cocktails.map(cocktail => (
+          <div key={cocktail.idDrink} className="cocktail">
+            <img src={cocktail.strDrinkThumb} alt={cocktail.strDrink} />
+            <h3>{cocktail.strDrink}</h3>
+            <p>{cocktail.strInstructions}</p>
+          </div>
+        ))}
+      </div>
+    
+
+  
+    </div>
   );
+  
 }
 
 export default Filter;
