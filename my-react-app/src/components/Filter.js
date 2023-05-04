@@ -46,24 +46,26 @@ function Filter(props) {
 
   return (
     <form onSubmit={handleSubmit}>
-      <label>
-        Alcoholic:
-        <select value={selectedAlcoholic} onChange={event => setSelectedAlcoholic(event.target.value)}>
-          <option value="Alcoholic">Alcoholic</option>
-          <option value="Non_Alcoholic">Non Alcoholic</option>
-        </select>
-      </label>
-      <br />
-      <label>
-        Category:
-        <input type="text" value={selectedCategory} onChange={event => setSelectedCategory(event.target.value)} />
-      </label>
-      <br />
-      <label>
-        Glass:
-        <input type="text" value={selectedGlass} onChange={event => setSelectedGlass(event.target.value)} />
-      </label>
-      <br />
+      Alcoholic:
+      <select
+        value={selectedAlcoholic}
+        onChange={event => setSelectedAlcoholic(event.target.value)}
+      >
+        <option value="Alcoholic">Alcoholic</option>
+        <option value="Non Alcoholic">Non Alcoholic</option>
+      </select>
+      Category:
+      <input
+        type="text"
+        value={selectedCategory}
+        onChange={event => setSelectedCategory(event.target.value)}
+      />
+      Glass:
+      <input
+        type="text"
+        value={selectedGlass}
+        onChange={event => setSelectedGlass(event.target.value)}
+      />
       <button type="submit">Submit</button>
     </form>
   );

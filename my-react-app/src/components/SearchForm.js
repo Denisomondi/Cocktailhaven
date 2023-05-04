@@ -1,33 +1,22 @@
-import React from "react";
-import { useGlobalContext } from "./context";
+import React from 'react';
+import { useGlobalContext } from './context';
 
 const SearchForm = () => {
-    const { setSearchState } = useGlobalContext();
+  const { setSearchTerm } = useGlobalContext();
 
-    const searchCocktails = async (e) => {
-        e.preventDefault();
-        const response = await fetch(
-          `https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${searchTerm}`
-        );
-        const { drinks } = await response.json();
-        setSearchResults(drinks);
-      };  
-    
+  const searchCocktails = async e => {
+    e.preventDefault();
+    const searchTerm = e.target.search.value.trim();
+    if (!searchTerm) return;
+    setSearchTerm(searchTerm);
+  };
+
   return (
-        <section className="section search">
-          <form onSubmit={searchCocktails} className="search-form">
-            <div className="form-control">
-              <label htmlFor="name">Search for a favorite cocktail</label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                onChange={(e) => setSearchTerm(e.target.value)}
-              />
-            </div>
-          </form>
-        </section>
-      );
-    };
-    
+    <form className="search-form" onSubmit={searchCocktails}>
+      <input type="text" id="search" name="search" />
+      <button type="submit">Search</button>
+    </form>
+  );
+};
+
 export default SearchForm;
