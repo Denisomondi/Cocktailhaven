@@ -1,0 +1,32 @@
+{
+    "reviews": [
+      {
+        "id": 1,
+        "user": "John Doe",
+        "cocktail": "Margarita",
+        "rating": 4.5,
+        "comment": "Great cocktail, perfect balance of sweet and sour.",
+        "date": "2021-07-20"
+      },
+      {
+        "id": 2,
+        "user": "Jane Smith",
+        "cocktail": "Old Fashioned",
+        "rating": 3,
+        "comment": "Not my favorite, too strong for my taste.",
+        "date": "2021-07-21"
+      },
+      {
+        "name": "Irish whisky",
+        "rating": 0,
+        "comment": "Hot! Meh!!!!",
+        "id": 3
+      },
+      {
+        "name": "Martini",
+        "rating": 5,
+        "comment": "Amazing!!",
+        "id": 4
+      }
+    ]
+  }
