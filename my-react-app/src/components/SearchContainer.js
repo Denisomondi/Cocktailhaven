@@ -10,15 +10,16 @@ const SearchContainer = () => {
 
   const handleSearch = async (e) => {
     e.preventDefault();
+    setCocktailDetails(null);
+    setIngredientDetails(null);
+    setError(null);
     if (searchType === 'cocktail') {
       try {
         const response = await fetch(`https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${searchTerm}`);
         const data = await response.json();
         if (data.drinks) {
           setCocktailDetails(data.drinks[0]);
-          setError(null);
         } else {
-          setCocktailDetails(null);
           setError('Cocktail not found.');
         }
         setSearchTerm('');
@@ -32,9 +33,7 @@ const SearchContainer = () => {
         const data = await response.json();
         if (data.ingredients) {
           setIngredientDetails(data.ingredients[0]);
-          setError(null);
         } else {
-          setIngredientDetails(null);
           setError('Ingredient not found.');
         }
         setSearchTerm('');
@@ -44,7 +43,7 @@ const SearchContainer = () => {
       }
     }
   };
-
+  
   const handleInputChange = (e) => {
     setSearchTerm(e.target.value);
   };
