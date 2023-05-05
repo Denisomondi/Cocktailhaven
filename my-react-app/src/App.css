@@ -46,6 +46,7 @@
 /*FILTER*/
 .filter-form {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   margin: 2rem 0;
@@ -74,4 +75,33 @@
 .filter-form button:hover {
   background-color: #0062cc;
 }
+
+.cocktail-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Four columns with equal width */
+  grid-auto-rows: minmax(100px, auto); /* Minimum row height of 100px */
+  gap: 20px; /* Spacing between items */
+}
+
+.cocktail-grid li {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.cocktail-grid li img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+
+
 

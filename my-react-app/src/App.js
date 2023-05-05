@@ -17,17 +17,19 @@ function App() {
   return (
     <div>
       <NavBar />
+
       <div>
-      <Filter setCocktails={setCocktails} apiKey={API_KEY} />
-      <ul>
-        {cocktails.map(cocktail => (
-          <li key={cocktail.idDrink}>
-            <img src={cocktail.strDrinkThumb} alt={cocktail.strDrink} />
-            {cocktail.strDrink}
+        <Filter setCocktails={setCocktails} apiKey={API_KEY} />
+        <ul className="cocktail-grid">
+          {cocktails.map(cocktail => (
+            <li key={cocktail.idDrink}>
+              <img src={cocktail.strDrinkThumb} alt={cocktail.strDrink} />
+              {cocktail.strDrink}
             </li>
-        ))}
-      </ul>
-      </div>
+    ))}
+  </ul>
+</div>
+
         <div>
           <SearchCocktailID />
           <CocktailDetails />
