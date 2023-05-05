@@ -3,10 +3,9 @@ import React, { useState } from 'react';
 import './App.css'
 
 import Filter from './components/Filter';
-import SearchCocktailID from './components/SearchCocktailID';
-import SearchIngredientID from './components/SearchIngredientID';
 import RandomCocktail from './components/RandomCocktail';
 import NavBar from './components/Navbar';
+import SearchContainerID from './components/SearchContainerID';
 
 const API_KEY = '1';
 
@@ -31,8 +30,8 @@ function App() {
 
         <div>
           <RandomCocktail />
-          <SearchCocktailID />
-          <SearchIngredientID />
+          <SearchContainerID />
+          
           
         </div>
     </div>

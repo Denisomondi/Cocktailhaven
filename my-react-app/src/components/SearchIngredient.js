@@ -1,3 +1,4 @@
+// Removed from App.js
 import React, { useState } from 'react';
 import Cocktail from './Cocktail';
 

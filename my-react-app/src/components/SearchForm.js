@@ -1,3 +1,4 @@
+// Removed from App.js
 import React from 'react';
 import { useGlobalContext } from './Context';
 
