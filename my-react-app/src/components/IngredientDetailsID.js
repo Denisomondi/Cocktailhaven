@@ -20,19 +20,11 @@ const IngredientDetailsID = ({ ingredientId }) => {
   }
 
   return (
-    <div>
+    <div className="IngredientDetailsID">
       <h2>{ingredientDetailsID.strIngredient}</h2>
       <img src={`https://www.thecocktaildb.com/images/ingredients/${ingredientDetailsID.strIngredient}-Small.png`} alt={ingredientDetailsID.strIngredient} />
       <p>{ingredientDetailsID.strDescription}</p>
-      <ul>
-        {ingredientDetailsID.drinks ? (
-          ingredientDetailsID.drinks.map((drink) => (
-            <li key={drink.idDrink}>{drink.strDrink}</li>
-          ))
-        ) : (
-          <li>No drinks found with this ingredient</li>
-        )}
-      </ul>
+      
     </div>
   );
 };
