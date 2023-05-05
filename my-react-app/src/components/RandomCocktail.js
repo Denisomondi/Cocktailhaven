@@ -18,7 +18,7 @@ const RandomCocktail = () => {
   }
 
   return (
-    <div>
+    <div className="RandomCocktail">
       <h2>{randomCocktail.strDrink}</h2>
       <img src={randomCocktail.strDrinkThumb} alt={randomCocktail.strDrink} />
       <p>{randomCocktail.strInstructions}</p>

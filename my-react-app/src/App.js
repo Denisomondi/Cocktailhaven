@@ -5,7 +5,6 @@ import './App.css'
 import Filter from './components/Filter';
 import SearchCocktailID from './components/SearchCocktailID';
 import SearchIngredientID from './components/SearchIngredientID';
-import CocktailDetails from './components/CocktailDetails';
 import RandomCocktail from './components/RandomCocktail';
 import NavBar from './components/Navbar';
 
@@ -31,10 +30,10 @@ function App() {
 </div>
 
         <div>
-          <SearchCocktailID />
-          <CocktailDetails />
-          <SearchIngredientID />
           <RandomCocktail />
+          <SearchCocktailID />
+          <SearchIngredientID />
+          
         </div>
     </div>
   );
