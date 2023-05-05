@@ -113,7 +113,7 @@ function Filter(props) {
         <option value="White Wine Glass">White Wine Glass</option>
         <option value="Pint Glass">Pint Glass</option>
       </select>
-      <button type="submit">Submit</button>
+      <button type="submit">Filter</button>
     </form>
 
     <div className="cocktail-list">

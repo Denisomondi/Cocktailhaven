@@ -5,7 +5,7 @@ import './App.css'
 import Filter from './components/Filter';
 import RandomCocktail from './components/RandomCocktail';
 import NavBar from './components/Navbar';
-import SearchContainerID from './components/SearchContainerID';
+import SearchContainer from './components/SearchContainer';
 
 const API_KEY = '1';
 
@@ -30,7 +30,7 @@ function App() {
 
         <div>
           <RandomCocktail />
-          <SearchContainerID />
+          <SearchContainer />
           
           
         </div>
